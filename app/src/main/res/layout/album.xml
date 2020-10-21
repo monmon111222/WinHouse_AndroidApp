@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.myapplication.ZoomLayoutD xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_or"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnChoose"
+                android:layout_width="wrap_content"
+                android:layout_height="300px"
+                android:layout_gravity="center"
+                android:layout_marginBottom="100px"
+                android:background="@drawable/button_bg2"
+                android:drawableLeft="@drawable/upload"
+                android:padding="20px"
+                android:text="  上傳照片"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnChoose"
+                android:layout_gravity="center"
+                android:layout_marginTop="100px"
+                android:background="@drawable/button_bg1"
+                android:drawableLeft="@drawable/images"
+                android:padding="40px"
+                android:text="查看相簿"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tech"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#7FA6ABAE"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/tView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="點擊螢幕，介面說明及消失"
+                android:textColor="@color/colorInfoText"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70px"
+                android:background="@drawable/ins_color_red"
+                android:text="點擊「上傳照片」可一次上傳多張照片"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1050px"
+                android:background="@drawable/ins_color_red"
+                android:text="點擊「查看相簿」可觀看本揪團，其他成員所上傳的所有照片，點選單一相片可縮放大小"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1050px"
+                android:background="@drawable/ins_color_red"
+                android:text="點擊「查看相簿」可觀看本揪團，其他成員所上傳的所有照片"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme.ToolBarStyle" />
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/drawer" />
+</com.example.myapplication.ZoomLayoutD>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.myapplication.ZoomLayoutD xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_or"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/LMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/eattextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:text="Eat"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/timetextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:text="Time"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/pnumtextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:text="Pnum"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:id="@+id/L2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnoutgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_bg1"
+                    android:padding="25px"
+                    android:text="我要退出"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btnjoingroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_bg1"
+                    android:padding="25px"
+                    android:text="我要參加"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btneditgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_bg1"
+                    android:padding="25px"
+                    android:text="編輯揪團"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btnchancelgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_bg1"
+                    android:padding="25px"
+                    android:text="取消揪團"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/L3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnalbum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/button_bg1"
+                    android:padding="25px"
+                    android:text="相簿"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="目前成員"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/LVmember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:layout_marginTop="25px"
+                android:layout_marginRight="25px"
+                android:background="@drawable/button_bg3" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tech"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="#7FA6ABAE"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/tView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="點擊螢幕，介面說明及消失"
+                android:textColor="@color/colorInfoText"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210px"
+                android:layout_marginTop="80px"
+                android:background="@drawable/ins_color_red"
+                android:text="點擊下方「相簿」可切換至該團相簿，上傳照片或查看相簿"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="550px"
+                android:layout_marginTop="250px"
+                android:background="@drawable/ins_color_red"
+                android:text="點擊成員資訊，可查看該成員資訊"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme.ToolBarStyle" />
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/drawer">
+
+    </com.google.android.material.navigation.NavigationView>
+</com.example.myapplication.ZoomLayoutD>

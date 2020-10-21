@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.example.myapplication.ZoomLayoutD xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_or"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme.ToolBarStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:layout_marginTop="25px"
+            android:layout_marginRight="25px"
+            android:orientation="vertical"
+            tools:layout_below="@id/toolbar">
+
+            <TextView
+                android:id="@+id/uetextViewname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ueTFname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/uetextViewph1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="電話"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ueTFphonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/uetextVieph2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="緊急連絡人電話"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ueTFphonenumber2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/uetextViere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="緊急連絡人與您的關係"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ueTFre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/uetextViewbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="請輸入出生年月日(例如:19910101)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ueTFbirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorGray" />
+
+            <TextView
+                android:id="@+id/uetextViewhis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="病史(若無填入無即可)"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ueTFbodyhistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorGray" />
+
+            <Button
+                android:id="@+id/btncheckedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_horizontal"
+                android:background="@drawable/button_bg2"
+                android:onClick="onSignUpClick"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="確定修改"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</com.example.myapplication.ZoomLayoutD>

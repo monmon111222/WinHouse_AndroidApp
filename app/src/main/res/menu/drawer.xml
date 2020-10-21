@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/action_home"
+            android:checked="true"
+            android:icon="@drawable/ic_pets"
+            android:title="回景點分類" />
+
+        <item
+            android:id="@+id/action_help"
+            android:icon="@drawable/ic_help"
+            android:title="介面說明" />
+
+        <item
+            android:id="@+id/action_user"
+            android:icon="@drawable/user"
+            android:title="會員資訊" />
+
+        <item
+            android:id="@+id/action_sos"
+            android:icon="@drawable/sos"
+            android:title="緊急求救" />
+        <item
+            android:id="@+id/action_ar"
+            android:icon="@drawable/photo_camera"
+            android:title="怎麼拍比較美?" />
+        <item
+        android:id="@+id/action_back"
+        android:icon="@drawable/back_arrow"
+        android:title="關閉選單"/>
+    </group>
+
+</menu>

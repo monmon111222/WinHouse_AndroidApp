@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.myapplication.ZoomLayoutD xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_car"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tech"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7FA6ABAE"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="點擊螢幕，介面說明及消失"
+            android:textColor="@color/colorInfoText"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ins_color_red"
+            android:text="點選您想要查看的景點分類，將切換至該景點分類清單"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/LL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical"
+            android:padding="10px">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/btnP"
+                        android:layout_width="350dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="150dp"
+                        android:background="@drawable/button_bg4"
+                        android:drawableLeft="@drawable/park"
+                        android:text="全部景點"
+                        android:textSize="30sp" />
+
+
+                    <Button
+                        android:id="@+id/btnP1"
+                        android:layout_width="350dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30px"
+                        android:background="@drawable/button_bg4"
+                        android:drawableLeft="@drawable/temple"
+                        android:text="古蹟"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/btnP2"
+                        android:layout_width="350dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30px"
+                        android:background="@drawable/button_bg4"
+                        android:drawableLeft="@drawable/shop"
+                        android:text="夜市及商圈"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/btnP3"
+                        android:layout_width="350dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30px"
+                        android:background="@drawable/button_bg4"
+                        android:drawableLeft="@drawable/disabled"
+                        android:text="無障礙"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/btnP4"
+                        android:layout_width="350dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30px"
+                        android:background="@drawable/button_bg4"
+                        android:drawableLeft="@drawable/woman"
+                        android:text="溫泉"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/btnP5"
+                        android:layout_width="350dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30px"
+                        android:background="@drawable/button_bg4"
+                        android:drawableLeft="@drawable/bicycle"
+                        android:text="單車"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme.ToolBarStyle" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/drawer" />
+
+</com.example.myapplication.ZoomLayoutD>
